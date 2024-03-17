@@ -1,0 +1,47 @@
+{
+  "name": "WebSocket Files Transfer",
+  "short_name": "Files Transfer",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#efefef",
+  "theme_color": "#3d4de2",
+  "orientation": "potrait-primary",
+  "icons": [
+    {
+      "src": "img/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/img/screenshot.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "screenshot"
+    },
+    {
+      "src": "/img/screenshot_mobile.png",
+      "sizes": "360x740",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "screenshot"
+    }
+  ]
+}

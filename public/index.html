@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mushie Spores</title>
+    <meta name="title" content="Mushie Spores" />
+    <meta name="description" content="WebSocket files transfer" />
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <main>
+      <div class="screen join-screen active">
+        <header>
+          <h1>WebSocket Files Transfer</h1>
+          <button id="create-connection">Create Connection</button>
+        </header>
+        <hr />
+        <section class="join-connection">
+          <h3>- Or join other connection -</h3>
+          <input type="text" id="other-connection" />
+          <button id="join-connection">Join Connection</button>
+        </section>
+        <section class="connection-detail hidden">
+          <h3 id="connection-id">000-000-000</h3>
+          <div id="qrcode"></div>
+          <a id="change-connection">← join other connection</a>
+        </section>
+      </div>
+
+      <div class="screen fs-screen">
+        <div class="file-input">
+          <label for="file-input">
+            <span class="file-input__icon">+</span>Browse Files
+          </label>
+          <input type="file" id="file-input" />
+        </div>
+        <hr />
+        <section class="item-list"></section>
+      </div>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"
+      integrity="sha512-WiGQZv8WpmQVRUFXZywo7pHIO0G/o3RyiAJZj8YXNN4AV7ReR1RYWVmZJ6y3H06blPcjJmG/sBpOVZjTSFFlzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
